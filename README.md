@@ -1,1 +1,0 @@
-# igaraxiya.github.io
