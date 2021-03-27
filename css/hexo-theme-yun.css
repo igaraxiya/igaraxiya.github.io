@@ -230,7 +230,7 @@ body::before {
   }
 }
 body {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur"), auto;
+  cursor: url("/images/arrow.cur"), auto;
 }
 a {
   cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), auto;
@@ -1164,7 +1164,7 @@ input {
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0s;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.7);
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 .post-card:hover {
@@ -1929,32 +1929,6 @@ input {
 .progress-circle-container {
   position: absolute;
 }
-#comment {
-  margin: 0 1rem;
-  padding: 1rem;
-  background-color: var(--post-block-bg-color);
-}
-@media screen and (max-width: 768px) {
-  #comment {
-    margin: 0;
-  }
-}
-.comment-tooltip {
-  font-size: 0.8rem;
-  color: var(--hty-text-color);
-  padding: 0.5rem;
-  border: 1px solid #f0f0f0;
-  margin-bottom: 1rem;
-}
-#github-issues {
-  margin: 1rem;
-}
-.v[data-class=v] p {
-  color: var(--hty-text-color) !important;
-}
-.v[data-class=v] p code {
-  color: #000;
-}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: 'dark';
@@ -1993,7 +1967,7 @@ input {
   }
   :root:not([data-user-color-scheme]) .post-card {
     color: #fff;
-    background-color: rgba(27,31,46,0.9);
+    background-color: rgba(27,31,46,0.7);
     box-shadow: 0 1px 8px rgba(27,31,46,0.1);
   }
   :root:not([data-user-color-scheme]) .post-block {
@@ -2069,7 +2043,7 @@ input {
 }
 [data-user-color-scheme='dark'] .post-card {
   color: #fff;
-  background-color: rgba(27,31,46,0.9);
+  background-color: rgba(27,31,46,0.7);
   box-shadow: 0 1px 8px rgba(27,31,46,0.1);
 }
 [data-user-color-scheme='dark'] .post-block {
