@@ -195,14 +195,14 @@ body::before {
   background-repeat: no-repeat;
   animation-name: bgFadeIn;
   animation-duration: 2s;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 @-moz-keyframes bgFadeIn {
   from {
     opacity: 0;
   }
   to {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 @-webkit-keyframes bgFadeIn {
@@ -210,7 +210,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 @-o-keyframes bgFadeIn {
@@ -218,7 +218,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 @keyframes bgFadeIn {
@@ -226,23 +226,23 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 body {
-  cursor: url("/images/arrow.cur"), auto;
+  cursor: url("/images/pointer.cur"), auto;
 }
 a {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), auto;
+  cursor: url("/images/link.cur"), auto;
 }
 a:hover {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), auto;
+  cursor: url("/images/link.cur"), auto;
 }
 .hty-icon-button {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), pointer;
+  cursor: url("/images/link.cur"), pointer;
 }
 input {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur"), auto;
+  cursor: url("/images/text.cur"), auto;
 }
 :root {
   --banner-line-color: #000;
@@ -791,7 +791,7 @@ input {
 }
 .wordcloud #wordcloud-canvas,
 .wordcloud #wordcloud-sidebar-canvas {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), pointer;
+  cursor: url("/images/link.cur"), pointer;
 }
 .wordcloud #wordbox {
   pointer-events: none;
@@ -1164,7 +1164,7 @@ input {
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0s;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.8);
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 .post-card:hover {
@@ -1967,7 +1967,7 @@ input {
   }
   :root:not([data-user-color-scheme]) .post-card {
     color: #fff;
-    background-color: rgba(27,31,46,0.7);
+    background-color: rgba(27,31,46,0.8);
     box-shadow: 0 1px 8px rgba(27,31,46,0.1);
   }
   :root:not([data-user-color-scheme]) .post-block {
@@ -2043,7 +2043,7 @@ input {
 }
 [data-user-color-scheme='dark'] .post-card {
   color: #fff;
-  background-color: rgba(27,31,46,0.7);
+  background-color: rgba(27,31,46,0.8);
   box-shadow: 0 1px 8px rgba(27,31,46,0.1);
 }
 [data-user-color-scheme='dark'] .post-block {
