@@ -15,11 +15,11 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg">
 <meta property="article:published_time" content="2021-03-27T05:14:20.000Z">
-<meta property="article:modified_time" content="2021-03-28T04:50:27.569Z">
+<meta property="article:modified_time" content="2021-03-28T09:58:46.368Z">
 <meta property="article:author" content="igaraxiya">
 <meta property="article:tag" content="Git code">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="igaraxiya"><img width="96" loading="lazy" src="/images/avatar.png" alt="igaraxiya"></a><div class="site-author-name"><a href="/about/">igaraxiya</a></div><a class="site-name" href="/about/site.html">n(*≧▽≦*)n</a><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">5</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><a class="site-state-item hty-icon-button" href="/" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E7%AE%80%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">Git简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">Git安装与配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">Git 基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="toc-number">3.1.</span> <span class="toc-text">创建仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-number">3.2.</span> <span class="toc-text">常用文件操作</span></a></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://igaraxiya.github.io/2021/03/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="igaraxiya"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="n(*≧▽≦*)n"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Git学习笔记</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2021-03-27 13:14:20" itemprop="dateCreated datePublished" datetime="2021-03-27T13:14:20+08:00">2021-03-27</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/%E5%B7%A5%E5%85%B7/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">工具</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag" href="/tags/Git-code/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Git code</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><blockquote>
+<meta name="twitter:image" content="https://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="igaraxiya"><img width="96" loading="lazy" src="/images/avatar.png" alt="igaraxiya"></a><div class="site-author-name"><a href="/about/">igaraxiya</a></div><a class="site-name" href="/about/site.html">n(*≧▽≦*)n</a><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">5</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><a class="site-state-item hty-icon-button" href="/" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E7%AE%80%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">Git简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">Git安装与配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">Git 基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="toc-number">3.1.</span> <span class="toc-text">创建仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-number">3.2.</span> <span class="toc-text">常用文件操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">4.</span> <span class="toc-text">远程仓库</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://igaraxiya.github.io/2021/03/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="igaraxiya"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="n(*≧▽≦*)n"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Git学习笔记</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2021-03-27 13:14:20" itemprop="dateCreated datePublished" datetime="2021-03-27T13:14:20+08:00">2021-03-27</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/%E5%B7%A5%E5%85%B7/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">工具</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag" href="/tags/Git-code/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Git code</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><blockquote>
 <p>Git 是一个开源的<strong>分布式版本控制系统</strong>，用于敏捷高效地处理任何或小或大的项目。</p>
 <p>Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 <p>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
@@ -45,18 +45,8 @@
 
 <p>显示当前的Git配置信息。</p>
 <p><a href="#m_config">更多Git可配置项</a></p>
-<h2 id="Git-基本操作"><a href="#Git-基本操作" class="headerlink" title="Git 基本操作"></a>Git 基本操作</h2><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>初始化一个新仓库：</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init <span class="token operator">&lt;</span>repo<span class="token operator">></span></code></pre>
-
-<p>Git会在<code>repo</code>指定的目录下新建一个Git仓库，为指定则会在当前目录新建</p>
-<p>从现有仓库中拷贝：</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone <span class="token operator">&lt;</span>url<span class="token operator">></span> <span class="token operator">&lt;</span>directory<span class="token operator">></span></code></pre>
-
-<p>Git会从<code>url</code>指定的仓库从克隆到<code>repo</code>中，<code>repo</code>未指定则克隆到在当前目录</p>
-<p>示例如下：</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git://github.com/username/directory.git</code></pre>
-
-<h3 id="常用文件操作"><a href="#常用文件操作" class="headerlink" title="常用文件操作"></a>常用文件操作</h3><table>
+<h2 id="Git-基本操作"><a href="#Git-基本操作" class="headerlink" title="Git 基本操作"></a>Git 基本操作</h2><ul>
+<li>Git常用命令预览：<table>
 <thead>
 <tr>
 <th>命令</th>
@@ -66,7 +56,7 @@
 </thead>
 <tbody><tr>
 <td><a href="#git_add">git add</a></td>
-<td><code>git add .</code>/<code>git add file1.txt</code></td>
+<td><code>git add .</code>/<code>git add file</code></td>
 <td>添加文件到仓库</td>
 </tr>
 <tr>
@@ -76,12 +66,12 @@
 </tr>
 <tr>
 <td><a href="#git_statues">git statues</a></td>
-<td></td>
+<td><code>git status</code></td>
 <td>查看仓库当前的状态，显示有变更的文件</td>
 </tr>
 <tr>
 <td><a href="#git_diff">git diff</a></td>
-<td></td>
+<td><code>git diff file</code></td>
 <td>比较暂存区和工作区文件的差异</td>
 </tr>
 <tr>
@@ -90,7 +80,19 @@
 <td>回退版本</td>
 </tr>
 </tbody></table>
-<p><span id = "git_add"></span></p>
+</li>
+</ul>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>初始化一个新仓库：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init <span class="token operator">&lt;</span>repo<span class="token operator">></span></code></pre>
+
+<p>Git会在<code>repo</code>指定的目录下新建一个Git仓库，为指定则会在当前目录新建</p>
+<p>从现有仓库中拷贝：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone <span class="token operator">&lt;</span>url<span class="token operator">></span> <span class="token operator">&lt;</span>directory<span class="token operator">></span></code></pre>
+
+<p>Git会从<code>url</code>指定的仓库从克隆到<code>repo</code>中，<code>repo</code>未指定则克隆到在当前目录</p>
+<p>示例如下：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git://github.com/username/directory.git</code></pre>
+<h3 id="常用文件操作"><a href="#常用文件操作" class="headerlink" title="常用文件操作"></a>常用文件操作</h3><p><span id = "git_add"></span></p>
 <p>将指定的工作区<strong>文件</strong>或<strong>文件夹</strong>添加至暂存区：</p>
 <pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token operator">&lt;</span>file<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token operator">&lt;</span>flie<span class="token operator"><span class="token file-descriptor important">2</span>></span> <span class="token punctuation">..</span>.</code></pre>
 
@@ -104,5 +106,52 @@
 <p>其中<code>-m</code>后面的<code>description</code>表示对本次提交的说明，<del>当然你可以不写，等回退的时候再后悔</del>。</p>
 <p>执行<code>git commit</code>后Git会告诉你文件的变动信息</p>
 <p><span id = "git_statues"></span><br><span id = "git_diff"></span><br><span id = "git_tesetf"></span></p>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>以Github为例：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">ssh-keygen -t rsa -C <span class="token string">"youremail@example.com"</span></code></pre>
+
+<p>在电脑上添加SSH密钥，然后将公钥添加到GIthub：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~/.ssh
+<span class="token function">cat</span> id_rsa.pub</code></pre>
+
+<p>将显示的内容复制到Github上。</p>
+<p>在Git上新建一个仓库，使用：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:username/repository.git</code></pre>
+
+<p>将本地仓库与一个远程仓库关联。然后使用：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push -u origin master</code></pre>
+
+<p>将本地的master分支提交到远程，加入<code>-u</code>参数还会把本地的<code>master</code>分支和远程的<code>master</code>分支关联起来</p>
+<p><code>git push</code>的不同参数如下：<span id = "git_push"></span></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin master：refs/for/master
+ <span class="token comment">#git push &lt;远程主机名> &lt;本地分支名> &lt;远程分支名></span>
+
+<span class="token function">git</span> push origin master
+ <span class="token comment">#如果远程分支被省略，如上则表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名）</span>
+ <span class="token comment">#如果该远程分支不存在，则会被新建</span>
+
+<span class="token function">git</span> push origin ：refs/for/master
+ <span class="token comment">#如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支</span>
+ <span class="token comment">#等同于 git push origin –delete master</span>
+
+<span class="token function">git</span> push origin
+ <span class="token comment">#如果当前分支与远程分支存在追踪关系，则本地分支和远程分支都可以省略，将当前分支推送到origin主机的对应分支</span>
+
+<span class="token function">git</span> push
+ <span class="token comment">#如果当前分支只有一个远程分支，那么主机名都可以省略，形如 git push，可以使用git branch -r ，查看远程的分支名</span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p><span id="m_config"></span></p>
 </div></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2021/03/28/Linux%E5%91%BD%E4%BB%A4/" rel="prev" title="Linux常用命令"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">Linux常用命令</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2021/03/25/%E5%88%A9%E7%94%A8hexo%E5%88%9B%E5%BB%BAblog/" rel="next" title="利用hexo快速搭建blog"><span class="post-nav-text">利用hexo快速搭建blog</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> igaraxiya</span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></div></body></html>
