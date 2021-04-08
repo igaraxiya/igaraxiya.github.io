@@ -6,15 +6,124 @@
 </script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="shortcut icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/igaraxiya/igaraxiya.github.io/images/favicon.ico"><link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/igaraxiya/igaraxiya.github.io/images/favicon.ico" color="#f02d34"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
     const Yun = window.Yun || {};
     window.CONFIG = {"hostname":"igaraxiya.github.io","root":"/","title":"クトリ・ノタ・セニオリス","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":true},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
-  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><meta name="description" content="填坑中。。。">
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><meta name="description" content="题目均在洛谷上    基本思想和算法 说明 题目    模拟 没有固定算法，个人认为考验问题转化能力，考验做题多少 P1089 P1055   枚举 列出所有可能然后找到符合条件的解    暴力 dfs（深度优先搜索）或bfs（广度优先搜索）搜索可能解    贪心 正如其名，没有算法，属于思想    排序 了解快速排序，归并排序桶排，基数排序等思想，会用sort函数    倍增 思想    二分查">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法知识汇总">
 <meta property="og:url" content="http://igaraxiya.github.io/2021/04/08/%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/index.html">
 <meta property="og:site_name" content="n(*≧▽≦*)n">
-<meta property="og:description" content="填坑中。。。">
+<meta property="og:description" content="题目均在洛谷上    基本思想和算法 说明 题目    模拟 没有固定算法，个人认为考验问题转化能力，考验做题多少 P1089 P1055   枚举 列出所有可能然后找到符合条件的解    暴力 dfs（深度优先搜索）或bfs（广度优先搜索）搜索可能解    贪心 正如其名，没有算法，属于思想    排序 了解快速排序，归并排序桶排，基数排序等思想，会用sort函数    倍增 思想    二分查">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-08T13:35:30.000Z">
-<meta property="article:modified_time" content="2021-04-08T13:35:30.188Z">
+<meta property="article:modified_time" content="2021-04-08T14:09:40.773Z">
 <meta property="article:author" content="igaraxiya">
-<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button sidebar-nav-active" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel sidebar-panel-active" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="igaraxiya"><img width="96" loading="lazy" src="https://cdn.jsdelivr.net/gh/igaraxiya/igaraxiya.github.io/images/avatar.png" alt="igaraxiya"></a><div class="site-author-name"><a href="/about/">igaraxiya</a></div><a class="site-name" href="/about/site.html">n(*≧▽≦*)n</a><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">7</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">5</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">6</span></a></div><a class="site-state-item hty-icon-button" href="/" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content">此文章未包含目录</div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://igaraxiya.github.io/2021/04/08/%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="igaraxiya"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="n(*≧▽≦*)n"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">算法知识汇总</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2021-04-08 21:35:30" itemprop="dateCreated datePublished" datetime="2021-04-08T21:35:30+08:00">2021-04-08</time></div><div class="post-classify"></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#f02d34;"><p><del><strong>填坑中。。。</strong></del></p>
+<meta property="article:tag" content="算法 数学">
+<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button sidebar-nav-active" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel sidebar-panel-active" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="igaraxiya"><img width="96" loading="lazy" src="https://cdn.jsdelivr.net/gh/igaraxiya/igaraxiya.github.io/images/avatar.png" alt="igaraxiya"></a><div class="site-author-name"><a href="/about/">igaraxiya</a></div><a class="site-name" href="/about/site.html">n(*≧▽≦*)n</a><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">7</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">5</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">7</span></a></div><a class="site-state-item hty-icon-button" href="/" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content">此文章未包含目录</div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://igaraxiya.github.io/2021/04/08/%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="igaraxiya"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="n(*≧▽≦*)n"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">算法知识汇总</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2021-04-08 21:35:30" itemprop="dateCreated datePublished" datetime="2021-04-08T21:35:30+08:00">2021-04-08</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/%E6%9D%82%E9%A1%B9/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">杂项</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag" href="/tags/%E7%AE%97%E6%B3%95-%E6%95%B0%E5%AD%A6/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">算法 数学</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#f02d34;"><p>题目均在洛谷上</p>
+<table>
+<thead>
+<tr>
+<th>基本思想和算法</th>
+<th>说明</th>
+<th>题目</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>模拟</td>
+<td>没有固定算法，个人认为考验问题转化能力，考验做题多少</td>
+<td><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1089">P1089</a> <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1055">P1055</a></td>
+</tr>
+<tr>
+<td>枚举</td>
+<td>列出所有可能然后找到符合条件的解</td>
+<td></td>
+</tr>
+<tr>
+<td>暴力</td>
+<td>dfs（深度优先搜索）或bfs（广度优先搜索）搜索可能解</td>
+<td></td>
+</tr>
+<tr>
+<td>贪心</td>
+<td>正如其名，没有算法，属于思想</td>
+<td></td>
+</tr>
+<tr>
+<td>排序</td>
+<td>了解快速排序，归并排序桶排，基数排序等思想，会用sort函数</td>
+<td></td>
+</tr>
+<tr>
+<td>倍增</td>
+<td>思想</td>
+<td></td>
+</tr>
+<tr>
+<td>二分查找</td>
+<td>排序后寻找答案，属于思想</td>
+<td></td>
+</tr>
+<tr>
+<td>分治</td>
+<td>考的题目也不固定，属于思想</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>算法</th>
+<th>说明</th>
+<th>题目</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>gcd求最大公因数</td>
+<td>就是辗转相除法</td>
+<td></td>
+</tr>
+<tr>
+<td>KMP字符串匹配</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>素数</td>
+<td>欧式筛素数，质因数分解</td>
+<td></td>
+</tr>
+<tr>
+<td>快速幂</td>
+<td>本质是分治</td>
+<td></td>
+</tr>
+<tr>
+<td>矩阵/矩阵快速幂</td>
+<td>了解下矩阵乘法的实现就行</td>
+<td></td>
+</tr>
+<tr>
+<td>动态规划DP</td>
+<td>暂时了解简单DP以及背包DP即可</td>
+<td></td>
+</tr>
+<tr>
+<td>最短路</td>
+<td>dijkstra单源最短路和floyd任意两点间最短路</td>
+<td></td>
+</tr>
+<tr>
+<td>最小生成树</td>
+<td>暂时学会Kruskal即可</td>
+<td></td>
+</tr>
+<tr>
+<td>并查集</td>
+<td>求两点是否有关系的算法</td>
+<td></td>
+</tr>
+<tr>
+<td>其他数据结构</td>
+<td>暂时了解栈，队列，树，二叉树就够用</td>
+<td></td>
+</tr>
+</tbody></table>
 </div></section></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2021/04/06/numpy%E5%BA%93%E4%B8%8E%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5/" rel="next" title="numpy库与线性代数初步"><span class="post-nav-text">numpy库与线性代数初步</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> igaraxiya</span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#f02d34" stroke-width="2" stroke-linecap="round"></circle></svg></a></div></body></html>
